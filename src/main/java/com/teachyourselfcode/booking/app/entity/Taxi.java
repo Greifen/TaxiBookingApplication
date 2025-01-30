@@ -17,13 +17,13 @@ public class Taxi {
 	private Integer taxiBookingId;
 
 	@Column(name="passenger_name")
-	private Integer passengerName;
+	private String passengerName;
 	
 	@Column(name="passenger_num")
 	private Integer passengerNumber;
 	
 	@Column(name="passenger_email")
-	private Integer passengerEmail;
+	private String passengerEmail;
 	
 	public Integer getTaxiBookingId() {
 		return taxiBookingId;
@@ -33,11 +33,11 @@ public class Taxi {
 		this.taxiBookingId = taxiBookingId;
 	}
 
-	public Integer getPassengerName() {
+	public String getPassengerName() {
 		return passengerName;
 	}
 
-	public void setPassengerName(Integer passengerName) {
+	public void setPassengerName(String passengerName) {
 		this.passengerName = passengerName;
 	}
 
@@ -49,11 +49,11 @@ public class Taxi {
 		this.passengerNumber = passengerNumber;
 	}
 
-	public Integer getPassengerEmail() {
+	public String getPassengerEmail() {
 		return passengerEmail;
 	}
 
-	public void setPassengerEmail(Integer passengerEmail) {
+	public void setPassengerEmail(String passengerEmail) {
 		this.passengerEmail = passengerEmail;
 	}
 

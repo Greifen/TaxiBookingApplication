@@ -26,4 +26,8 @@ public class TaxiBookingService {
 		return taxiBookingDao.findAll();
 	}
 
+	public void deleteBooking(Integer bookingId) {
+		taxiBookingDao.deleteById(bookingId);
+	}
+
 }

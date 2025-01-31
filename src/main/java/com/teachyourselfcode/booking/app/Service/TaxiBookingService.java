@@ -1,5 +1,7 @@
 package com.teachyourselfcode.booking.app.Service;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +16,14 @@ public class TaxiBookingService {
 	
 	public Taxi createBooking(Taxi taxi) {
 		return taxiBookingDao.save(taxi);
+	}
+
+	public Optional<Taxi> getBooking(Integer bookingId) {
+		return taxiBookingDao.findById(bookingId);
+	}
+
+	public Iterable<Taxi> getAllBookings() {
+		return taxiBookingDao.findAll();
 	}
 
 }

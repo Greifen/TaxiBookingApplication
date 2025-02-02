@@ -1,4 +1,4 @@
-package com.teachyourselfcode.booking.app.Dao;
+  package com.teachyourselfcode.booking.app.Dao;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

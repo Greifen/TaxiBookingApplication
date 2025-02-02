@@ -22,6 +22,11 @@ public class TaxiBookingController {
 	@Autowired
 	TaxiBookingService taxiBookingService;
 	
+	@GetMapping(value="/")
+	public String getPage() {
+		return "hallo";
+	}
+	
 	@PostMapping(value="/createbooking")
 	public Taxi createBooking(@RequestBody Taxi taxi) {
 		return taxiBookingService.createBooking(taxi);
